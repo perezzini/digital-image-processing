@@ -1,0 +1,9 @@
+function y = dif_finita( x )
+%dif_finita(v)
+%   La diferencia finita de Y entre los componentes de un vectot x 
+%   se define como Yn = Xn+1 – Xn donde n = 1, ..., N-1.
+%   
+
+
+end
+
