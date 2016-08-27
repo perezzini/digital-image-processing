@@ -1,0 +1,7 @@
+%vander4
+
+clear all
+
+x = (1:6).';
+m = 7;
+
