@@ -1,5 +1,5 @@
 function y = difvector( x )
-%dif_finita(x)
+%difvector(x)
 %   La diferencia finita de Y entre los componentes de un vector X 
 %   se define como Yn = Xn+1 – Xn donde n = 1, ..., N-1.
 %   Input:
