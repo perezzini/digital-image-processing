@@ -28,7 +28,7 @@ J = I;
 
 %% Ecualización local
 for c = v2+1:col-v2
-    disp(c)
+%     disp(c)
     for f = v2+1:fil-v2
         X = histeq(I(f-v2:f+v2, c-v2:c+v2));
         J(f, c) = X(v2+1, v2+1); % se queda con pixel central

@@ -13,12 +13,16 @@ I = imread(Resp);
 
 %%
 % INVERSA
-L = 255:-1:0;
-Jinv = aplicaLUT(I, L);
+% L = 255:-1:0;
+% Jinv = aplicaLUT(I, L);
 
 % LOGARITMICA
 % L = uint8(log((0:255)+1)/log(256)*255);
 % Jlog = aplicaLUT(I, L);
+
+% POWER-LAW TRANSFORMATION con gamma = 0.20
+L = uint8(((0:255).^0.20)/(256^0.20)*255);
+Jpower = aplicaLUT(I, L);
 %%
 figure, subplot(121), imshow(I), title(Resp), axis on;
-subplot(122), imshow(Jinv), title('Imagen procesada'), axis on;
+subplot(122), imshow(Jpower), title('Imagen procesada'), axis on;
