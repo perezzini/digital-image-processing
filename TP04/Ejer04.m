@@ -42,8 +42,8 @@ end
 
 figure, subplot(211)
 plot(uc, XM, uc, KM*abs(X(1))), grid on
-legend('señal', 'kernel')
+legend('fila 167 de imágen, en Fourier', 'kernel, en Fourier')
 
 subplot(212)
 plot(uc, XpM, uc, XcM, 'o'), grid on
-legend('Xp', 'Xc')
+legend('Xp: prod. de transf. de Fourier', 'Xc: transf. de Fourier de convolución')
