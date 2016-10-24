@@ -1,6 +1,6 @@
 % Ejer03.m: filtros de Butterorth y gausiano
 clear all
-close all
+% close all
 
 NomImag=input('Ingrese nombre imagen: ','s');
 if isempty(NomImag)
@@ -46,8 +46,11 @@ Ib=uint8(mat2gray(abs(Ib))*255);
 Ig=uint8(mat2gray(abs(Ig))*255);
 % II=uint8(mat2gray(abs(II))*255);     % imagen filtrada final
 
-figure,imshow([Ib Ig]),axis on
-title(sprintf('%s filtrada con fcorte: %d, orden: %d',NomImag,fcorte,orden))
+figure,imshow(Ib),axis on
+title(sprintf('%s filtrada (Butterworth) con fcorte: %d, orden: %d',NomImag,fcorte,orden))
+
+figure,imshow(Ig),axis on
+title(sprintf('%s filtrada (Gausiano) con fcorte: %d, orden: %d',NomImag,fcorte,orden))
 
 
 

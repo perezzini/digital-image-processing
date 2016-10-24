@@ -37,10 +37,11 @@ Ih=exp(Ifil)-1;                    % imagen filtrada
 Ig=fGauss(I,fcorte,'pb');     % aplicamos algún filtro
 
 %%
-figure,imshow([uint8(mat2gray(Ig)*255) uint8(mat2gray(Ih)*255)])
-title(sprintf('%s filtrada con fcorte: %d',NomImag,fcorte))
+figure,imshow(uint8(mat2gray(Ig)*255))
+title(sprintf('%s filtrada (Gausiano) con fcorte: %d',NomImag,fcorte))
 
-
+figure,imshow(uint8(mat2gray(Ih)*255))
+title(sprintf('Aplicación de filtro Homomórfico a %s con fcorte: %d',NomImag,fcorte))
 
 
 
