@@ -8,7 +8,7 @@ function J = aplicaLUT( I, T )
 J = I;
 
 for k = 0:255
-   J(I == k) = T(k+1); % T(0) no existe, comienza desde T(10) ...
+   J(I == k) = T(k+1); % T(0) no existe, comienza desde T(1) ...
 end
 
 end
