@@ -5,7 +5,7 @@ function J = ecualizar( I )
 % histograma normalizado; devuelve un vector col
 h = imhist(I)/numel(I);
 
-% suma acumulada. LUT de ecualización
+% suma acumulada (siempre creciente). LUT de ecualización
 g = uint8(cumsum(h)*255); % se multiplica por 255 porque el resultado de cumsum() está entre 0 y 1
 
 J = aplicaLUT(I, g);
