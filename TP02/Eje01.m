@@ -25,5 +25,8 @@ J = normaliza(I);
 figure, subplot(121), imshow(I), title(Resp), axis on;
 subplot(122), imshow(J), title('Imagen procesada'), axis on;
 
-figure, plot(h, I(linea, :), h, J(linea, :)), grid on, legend(Resp, 'procesada')
-title(sprintf('Linea horizontal %d', linea))
+figure, subplot(211), plot(0:255, histograma(I)), title('Histograma imagen original'), axis on;
+subplot(212),plot(0:255, histograma(J)), title('Histograma imagen normalizada'), axis on;
+
+% figure, plot(h, I(linea, :), h, J(linea, :)), grid on, legend(Resp, 'procesada')
+% title(sprintf('Linea horizontal %d', linea))
