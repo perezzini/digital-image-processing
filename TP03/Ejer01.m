@@ -9,7 +9,7 @@ end
 I=imread(Resp);
 
 
-%% gausiano o normal
+%% gausiano o normal (con media = 0)
 Resp=input('Desvío: ','s');
 if isempty(Resp)
     return
