@@ -1,4 +1,4 @@
-% Ejer06.m: filtros no linealesclear all
+% Ejer06.m: filtros no lineales
 clear all
 %close all
 
@@ -23,7 +23,7 @@ figure, imshow([I M]), title((sprintf('Mediana kernel %dx%d',Tk,Tk)))
 % de que la imagen quede muy borroneado
 
 %% Filtro Alfa Recortado (filtro PB)
-Resp=input('Parámtro del filtro alfaR: ','s');
+Resp=input('Parámetro del filtro alfaR: ','s');
 if isempty(Resp)
     return;
 end

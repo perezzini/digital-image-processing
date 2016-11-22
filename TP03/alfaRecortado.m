@@ -1,5 +1,5 @@
 function J = alfaRecortado( I, Tk, pAR )
-%J = alfaRecortado( I, pAR )
+%J = alfaRecortado( I, Tk, pAR )
 %   Filtro alfa recortado
 %     I: imagen original
 %     Tk: tamaño del kernel como [Fk Ck]
