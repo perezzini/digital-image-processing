@@ -21,7 +21,7 @@ legend('x1', 'x2')
 
 subplot(212)
 plot(tc, xc), grid on
-title('Convolución')
+title('Convolución entre x1 y x2')
 
 %% transformadas de Fourier
 
@@ -52,8 +52,9 @@ end
 
 figure, subplot(211)
 plot(uc, [X1_mod; X2_mod]), grid on
-legend('X1', 'X2')
+legend('X1: Espectro de la transformada de la señal x1', 'X2: Espectro de la transformada de la señal x2')
 
 subplot(212)
-plot(uc, Xp_mod, uc, Xc_mod, 'o'), grid on
-legend('Xp', 'Xc')
+plot(uc, Xp_mod, '.', uc, Xc_mod, 'o'), grid on
+legend('Xp: Espectro del producto entre las transformadas de las señales x1 y x2', 'Xc: Espectro de la convolución entre x1 y x2')
+title('Equivalencia de formalidades (Teorema FT-Conv)')

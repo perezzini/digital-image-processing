@@ -8,9 +8,9 @@ tfin = 0.2;
 
 %% Simulación de señal continua
 Fc = 10000; % frecuencia de muestreo en 10KHz
-Tc = 1/Fc;
+Tc = 1/Fc; % 1/(1/dT)
 tc = tini:Tc:tfin; % tiempo "continuo"
-tc(end) = [];
+tc(end) = []; % intervalo abierto
 
 xc = cos(2*pi*f0*tc); % señal "continua"
 

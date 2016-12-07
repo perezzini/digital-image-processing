@@ -1,5 +1,6 @@
 %Ejer04.m: filtrado espacial y en frecuencias
 clear all
+close all
 
 I = imread('cam03.tif');
 figure, imshow(I), grid on
@@ -9,18 +10,18 @@ x = double(I(167, :));
 ker = [3 6 10 6 3]/28;
 
 %%
-xc = convolucion1(x, ker);
+xc = convolucion1(x, ker); % convolucion1() extiende señales x y ker
 Nc = length(xc);
 Nx = length(x);
 
 figure, plot(0:Nx-1, x, -2:Nc-3, xc), grid on
-legend('x', 'xc');
+legend('x: fila 167', 'xc: convolución de x con ker');
 
 %% FFT
 
 % señales extendidas para calcular ft
-xe = [x zeros(1, Nc-Nx)];
-kere = [ker zeros(1, Nc-5)];
+xe = [x zeros(1, Nc-Nx)]; % fila
+kere = [ker zeros(1, Nc-5)]; % kernel
 
 X = fft(xe);
 KER = fft(kere);
@@ -42,8 +43,8 @@ end
 
 figure, subplot(211)
 plot(uc, XM, uc, KM*abs(X(1))), grid on
-legend('fila 167 de imágen, en Fourier', 'kernel, en Fourier')
+legend('Espectro de la FT de la fila 167 de la imágen', 'Espectro de la FT del kernel')
 
 subplot(212)
-plot(uc, XpM, uc, XcM, 'o'), grid on
-legend('Xp: prod. de transf. de Fourier', 'Xc: transf. de Fourier de convolución')
+plot(uc, XpM, '.', uc, XcM, 'o'), grid on
+legend('Xp: espectro del prod. de la FT', 'Xc: espectro de la FT de convolución')

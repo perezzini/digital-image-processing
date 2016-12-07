@@ -14,5 +14,5 @@ Nc = length(c1);
 figure, subplot(221), plot(0:N-1, x1, 0:N-1, x2), grid on
 legend('x1', 'x2')
 
-subplot(212), plot(0:Nc-1, c1, 0:Nc-1, c2, 'o'), grid on
+subplot(212), plot(0:Nc-1, c1, '.', 0:Nc-1, c2, 'o'), grid on
 legend('conv1D', 'conv MATLAB');
