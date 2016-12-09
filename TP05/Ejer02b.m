@@ -14,7 +14,7 @@ IF=fftshift(fft2(I));
 IFm=abs(IF);
 
 figure,imshow(mat2gray(log(IFm+1)))
-title('log de FT')
+title('log de espectro de FT')
 
 %% Arma filtro
 [f,c]=size(IF);

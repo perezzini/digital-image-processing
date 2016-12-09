@@ -31,7 +31,7 @@ IFm=abs(IF);
 IFh=fftshift(fft2(Ih));
 IFhm=abs(IFh);
 figure,imshow([mat2gray(log(IFm+1)) mat2gray(log(IFhm+1))])
-title('log de FT')
+title('log de espectro de FT (imagen de entrada)')
 
 %% Arma filtro
 

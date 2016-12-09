@@ -1,6 +1,6 @@
 % Ejer03.m: filtros de Butterorth y gausiano
 clear all
-% close all
+close all
 
 NomImag=input('Ingrese nombre imagen: ','s');
 if isempty(NomImag)
@@ -36,6 +36,10 @@ end
 orden=eval(Resp);
 
 %% Filtrado
+
+% pb = pasa bajos
+% pa = pasa altos
+
 % Ib=fButt(I,fcorte,orden,'pb');
 % Ig=fGauss(I,fcorte,'pb');
 Ib=fButt(I,fcorte,orden,'pa');
@@ -51,9 +55,3 @@ title(sprintf('%s filtrada (Butterworth) con fcorte: %d, orden: %d',NomImag,fcor
 
 figure,imshow(Ig),axis on
 title(sprintf('%s filtrada (Gausiano) con fcorte: %d, orden: %d',NomImag,fcorte,orden))
-
-
-
-
-
-

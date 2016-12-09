@@ -14,7 +14,7 @@ axis on
 %%
 IF=fftshift(fft2(I));
 IFm=abs(IF);
-figure,imshow(mat2gray(log(IFm+1))),title('log de FT')
+figure,imshow(mat2gray(log(IFm+1))),title('log del espectro de FT')
 
 %% Filtro en Fourier
 [f,c]=size(IF);
@@ -38,7 +38,7 @@ end
 F=zeros(size(IF));      % filtro
 D=sqrt(FU.^2+FV.^2);    % módulos de frecuencias
 
-% % filtro pasabajos circular
+% filtro pasabajos circular
 F(D<=fcorte)=1;
 
 % filtro pasabajos rectangular
