@@ -13,6 +13,6 @@ I = imread(NomImag);
 H = modegButt(size(I), 30, 2); % degradación en Fourier (OTF)
 h = otf2psf(ifftshift(H)); % degradación en el espacio (PSF)
 
-Ir = deconvwnr(I, h, 0.001);
+Ir = deconvwnr(I, h, 0.001); % filtro de Wiener (restauración en el espacio)
 %%
 figure,imshow([I Ir])

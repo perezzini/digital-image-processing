@@ -15,6 +15,8 @@ G = fftshift(fft2(I));
 H2 = abs(H).^2;
 F = zeros(size(I));
 
+% "salta" valores nulos de H para que se pueda aplicar, finalmente, la
+% ecuación
 F(H2 > 0) = H2(H2 > 0)./(H2(H2 > 0) + kw).*G(H2 > 0)./H(H2 > 0);
 
 %%

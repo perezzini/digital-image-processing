@@ -5,7 +5,7 @@ function Ir = fInverso( I, H, rechazo )
 %       H: función (en Fourier) de degradación (también llamada función
 %       transferencia)
 %       rechazo: parámetro del filtro inverso; rechazo del filtro
-%       Ir: imagen restaurada
+%       Ir: imagen restaurada (imagen original estimada)
 
 G = fftshift(fft2(I));
 %% filtro inverso

@@ -1,10 +1,10 @@
 function H = modegMov( tam, desp, Texp )
 %H = modegMov( tam, desp )
-% Genera función transferencia del modelo de degradación
+% Genera función transferencia del modelo de degradación de movimiento
 % (en este caso: borroneado por movimiento horizontal lineal uniforme)
 %   tam: tamaño de la matriz
-%       tam(1): filas
-%       tam(2): columnas
+%       tam(1): nº de filas
+%       tam(2): nº de columnas
 %   desp: desplazamiento en pixeles
 %   Texp: tiempo de exposición durante el que se realiza el movimiento
 
