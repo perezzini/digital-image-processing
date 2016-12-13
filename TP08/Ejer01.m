@@ -1,5 +1,5 @@
 % Ejer01.m: dilatación de imágenes (consideramos que el objeto a dilatar siempre 
-% está en blano. Se considera que el fondo siempre es negro)
+% está en blanco. Se considera que el fondo siempre es negro)
 clear all
 close all
 

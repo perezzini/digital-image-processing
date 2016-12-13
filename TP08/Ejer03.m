@@ -1,5 +1,10 @@
-% Ejer03.m: openinig de imágenes (consideramos que el objeto a dilatar siempre 
-% está en blano. Se considera que el fondo siempre es negro)
+% Ejer03.m: opening de imágenes (consideramos que el objeto siempre 
+% está en blanco. Se considera que el fondo siempre es negro)
+
+% El opening, por ejemplo, sirve para separar objetos de diferentes
+% tamaños.
+% Cálculo: erosión -> dilatación
+
 clear all
 close all
 

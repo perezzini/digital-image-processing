@@ -8,7 +8,9 @@ if isempty(NomImag)
 end
 
 I=imread(NomImag);
-%% 
+%%
+% Se erosiona la imagen con determinada máscara y luego al resultado se le
+% resta la imagen original
 Ip4 = bwperim(I, 4); % b (A) = A?[A(?)B]
 Ip8 = bwperim(I, 8);
 
