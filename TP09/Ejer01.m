@@ -26,9 +26,10 @@ aspecto = ancho/altura;
 rectan = area/ancho/altura;
 
 % pAdeI = bwperim(AdeI, 8); (en 4 tengo que contar las raíces de 2)
-% figure, imshowpair(AdeI, pAdeI, 'montage')
 
 pAdeI = bwperim(AdeI, 8);
+figure, imshowpair(AdeI, pAdeI, 'montage')
+title('Perímetro de la imagen de entrada')
 % busca los pixels distintos de cero en el perímetro y cuenta la cantidad
 % encontrada
 perimetro = length(find(pAdeI ~= 0));
