@@ -1,6 +1,6 @@
 %Ejer04.m: filtrado pasa altos
 clear all
-% close all
+close all
 
 Resp=input('Nombre imagen: ','s');
 if isempty(Resp)

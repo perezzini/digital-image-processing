@@ -8,7 +8,7 @@ if isempty(Resp)
 end
 I=imread(Resp);
 
-%% Promedio cuadrado
+%% Promedio cuadrado (funciona bien para reducir el ruido gaussiano)
 Resp=input('Tamaño kernel [3]: ','s');
 if isempty(Resp)
     Resp='3';
@@ -20,7 +20,7 @@ Ia=imfilter(I,ker);
 
 figure,imshow([I Ia]),title(sprintf('Average kernel %dx%d',Tk,Tk))
 
-%% Promedio circular
+%% Promedio circular (funciona bien para reducir el ruido gaussiano)
 Resp=input('Radio kernel [1]: ','s');
 if isempty(Resp)
     Resp='1';
@@ -32,7 +32,7 @@ Ic=imfilter(I,ker);
 
 figure,imshow([I Ic]),title(sprintf('Disco radio %d',Tk))
 
-%% Gausiano
+%% Gaussiano
 Resp=input('Tamaño kernel [3]: ','s');
 if isempty(Resp)
     Resp='3';

@@ -1,6 +1,7 @@
-% Ejer06.m: filtros no lineales
+% Ejer06.m: filtros no lineales. Estos no utilizan la función de
+% Convolución.
 clear all
-%close all
+close all
 
 Resp=input('Nombre imagen: ','s');  
 if isempty(Resp)
@@ -14,7 +15,7 @@ if isempty(Resp)
 end
 Tk=eval(Resp);
 
-%% Filtro de mediana (filtro pasa bajos; no utiliza la función de convolución)
+%% Filtro de mediana (filtro PB)
 M = medfilt2(I, [Tk Tk]); % medfilt2() analiza los bordes de la imagen. 
                           % Probablemente, colocando 0's. Por esto, en las esquinas de las imagenes hay un pixel negro
 
@@ -46,6 +47,9 @@ ECM = im2uint8(mat2gray(fECM(I, [Tk Tk], sR)));
 figure, imshow([I ECM])
 title((sprintf('Filtro Adaptativo: kernel %dx%d, sRuido = %.2f', Tk, Tk, sR)))
 
-% Para calcular el desvío std. de la imagen a ingresar hacemos:
+% Para calcular el desvío std. de la imagen a ingresar hacemos 
+% (generalmente, ésto se realiza en una región, dentro de todo, "uniforme" 
+% - sin muchas discontinuidades visibles - para obtener lo más preciso 
+% posible la desviación estandar del ruido):
 % I = imtool(I);
 % std2(I(1:30, :))

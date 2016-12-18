@@ -20,15 +20,15 @@ I=imread(Resp);
 % figure, imshow([I D; Dx Dy]), title('Derivadas horizontales y verticales')
 
 %% Derivadas a 45º (Roberts)
-% ker = [-1 0; 0 1];
-% R1 = imfilter(I, ker);
-% 
-% ker = [0 -1; 1 0];
-% R2 = imfilter(I, ker);
-% 
-% R = imlincomb(0.5, R1, 0.5, R2); % imfilter() deja todo positivo. Combinación de ambas derivadas
-% 
-% figure, imshow([I R; R1 R2]), title('Roberts. Derivadas a 45º')
+ker = [-1 0; 0 1];
+R1 = imfilter(I, ker);
+
+ker = [0 -1; 1 0];
+R2 = imfilter(I, ker);
+
+R = imlincomb(0.5, R1, 0.5, R2); % imfilter() deja todo positivo. Combinación de ambas derivadas
+
+figure, imshow([I R; R1 R2]), title('Roberts. Derivadas a 45º')
 
 %% Prewitt
 % ker = fspecial('prewitt');
@@ -49,13 +49,13 @@ I=imread(Resp);
 % figure, imshow([I S; S1 S2]), title('Sobel')
 
 %% Laplaciano
-Resp=input('Parámetro de forma [0.5]: ', 's');
-if isempty(Resp)
-    Resp='0.5';
-end
-alfa=eval(Resp);
-
-ker = fspecial('laplacian', alfa); % 3x3 by defect ker
-L = imfilter(I, ker);
-
-figure, imshow([I, L]), title('Laplaciano');
+% Resp=input('Parámetro de forma [0.5]: ', 's');
+% if isempty(Resp)
+%     Resp='0.5';
+% end
+% alfa=eval(Resp);
+% 
+% ker = fspecial('laplacian', alfa); % 3x3 by defect ker
+% L = imfilter(I, ker);
+% 
+% figure, imshow([I, L]), title('Laplaciano');
