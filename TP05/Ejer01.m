@@ -45,7 +45,7 @@ F(D<=fcorte)=1;
 % F(abs(FU)<=fcorte & abs(FV)<=fcorte)=1;
 
 % Filtro pasa altos
-% F=1-F;
+F=1-F;
 
 figure,imshow(F),axis on, grid on
 

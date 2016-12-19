@@ -128,7 +128,7 @@ Ilog = imfilter(Ipb, klog);
 figure,imshowpair(I, Ilog, 'montage');
 title('Imagen original e imagen filtrada por Laplaciano de Gaussian LoG')
 
-%% edge()
+%% edge(). Esta función realiza, también, thresholding.
 BordeS = edge(I, 'sobel');
 BordeLoG = edge(I, 'log');
 

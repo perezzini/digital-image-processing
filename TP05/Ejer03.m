@@ -40,10 +40,10 @@ orden=eval(Resp);
 % pb = pasa bajos
 % pa = pasa altos
 
-% Ib=fButt(I,fcorte,orden,'pb');
-% Ig=fGauss(I,fcorte,'pb');
-Ib=fButt(I,fcorte,orden,'pa');
-Ig=fGauss(I,fcorte,'pa');
+Ib=fButt(I,fcorte,orden,'pb');
+Ig=fGauss(I,fcorte,'pb');
+% Ib=fButt(I,fcorte,orden,'pa');
+% Ig=fGauss(I,fcorte,'pa');
 
 %%
 Ib=uint8(mat2gray(abs(Ib))*255);
