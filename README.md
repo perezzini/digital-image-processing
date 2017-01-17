@@ -1,4 +1,4 @@
-# digital-image-processing
+# Digital Image Processing
 Digital Image Processing class projects.
 
 Code and assignments explained in Spanish.
