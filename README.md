@@ -1,6 +1,12 @@
 # digital-image-processing
-Digital Image Processing class notes and projects. National University of Rosario. 2016.
+Digital Image Processing class projects.
 
-Software used: Matlab 2012
+**[National University of Rosario](http://unr.edu.ar)** - 2016
 
-Code explained in Spanish.
+Code and assignments explained in Spanish.
+
+## Software used
+Matlab 2012
+
+## Theory
+_Digital Image Processing_ - Rafael C Gonzalez, et al.
