@@ -1,7 +1,7 @@
 # Digital Image Processing
 Digital Image Processing class projects.
 
-**Code and assignments explained in Spanish.
+**Code and assignments explained in Spanish.**
 
 [National University of Rosario](http://unr.edu.ar) - Department of Computer Science
 
@@ -27,6 +27,6 @@ Deals with the tools for extracting image components that are useful in the repr
 Partitions an image into its constituent parts or objects.
 
 ## Representation and description
-Usually is a raw pixel data, constituing either the boundary of a region, or all of the points in the region itself._
+Usually is a raw pixel data, constituing either the boundary of a region, or all of the points in the region itself.
 
 _According with [1]_
