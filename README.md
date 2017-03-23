@@ -14,7 +14,7 @@ _Digital Image Processing_ - Rafael C Gonzalez, et al. [1]
 # About the Projects
 The projects concern about multiple processes. These are:
 
-## Image ehancement
+## Image enhancement
 The process of manipulating an image so that the result is more suitable than the original for a specific application.
 
 ## Image restoration
