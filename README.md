@@ -1,15 +1,9 @@
-# Digital Image Processing
+# Digital Image Processing :sunrise_over_mountains:
 Digital Image Processing class projects.
 
 **Code and assignments explained in Spanish.**
 
 [National University of Rosario](http://unr.edu.ar) - Department of Computer Science
-
-## Software used
-Matlab 2012
-
-## Theory
-_Digital Image Processing_ - Rafael C Gonzalez, et al. [1]
 
 # About the Projects
 The projects concern about multiple processes. These are:
@@ -29,4 +23,8 @@ Partitions an image into its constituent parts or objects.
 ## Representation and description
 Usually is a raw pixel data, constituing either the boundary of a region, or all of the points in the region itself.
 
-_According with [1]_
+# Theory :closed_book:
+_Digital Image Processing_ - Rafael C Gonzalez, et al. [1]
+
+# Software used
+Matlab 2012
